@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Fixi</title>
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/md-contacto.css">
+</head>
+<body>
+
+        <!-- Barra de navegación -->
+    <header>
+        <div class="logo">
+            <a href="https://enginet.com.mx"><img src="../img/logo-nav.png" class="logo-img" alt="Logo oficial Fixi"></a> 
+        </div>
+        <nav>
+            <a href="../index.html" class="nav-link">SALIR</a>
+        </nav>
+    </header>
+
+
+    <!-- Contenedor total para contacto, form, imagen -->
+    <div class="context">
+    <!-- Section & Contenedor de contacto -->
+    <div class="general-form">
+        <section class="contacto">
+            <div class="titulo-contacto">
+                <h3>Contacto</h3>
+            </div>
+        <div class="informacion">
+            <div class="ul-li">
+                <ul>
+                    <li>Colonia Centro, calle 27 * 36 entre Mz #15, C.P. 24100</li>
+                    <li>Celular: 938-567-50-26</li>
+                    <li>Oficina: 938-567-50-27</li>
+                    <li>Email: ventas@fixi.com.mx</li>
+                </ul>
+            </div>
+        </div>
+        </section>
+
+
+
+        <form action="#" method="get" class="form-general">
+            <!-- Form nombre -->
+            <div class="label-name">
+                <label for="input-name" class="name">Tu Nombre (Requerido)</label>
+                <input type="text">                        
+            </div>
+            <!-- Form Teléfono -->
+            <div class="label-tel">
+                <label for="input-tel" class="tel">Teléfono (Requerido)</label>
+                <input type="tel" name="telefono" id="id-tel">
+            </div>
+            <!-- Form Correo -->
+            <div class="label-email">
+                <label for="input-email" class="mail">Tu correo electrónico (Requerido)</label>
+                <input type="email" name="mail" id="id-mail">
+            </div>
+            <!-- Form de servicio -->
+            <div class="label-servicios">
+                <label for="input-services" class="services">Selecciona el tipo de servicio (Requerido)</label>
+                <select name="servicios" id="id-services">
+                    <option value="#">Elegir...</option>
+                    <option value="micro-pyme">Micro Pyme</option>
+                    <option value="pequeña-pyme">Pequeña Pyme</option>
+                    <option value="mediana-pyme">Mediana Pyme</option>
+                    <option value="datos">Implementación de infraestructura de datos</option>
+                    <option value="voz">Implementación de infraestructura de voz</option>
+                    <option value="voz-datos">Mantenimiento de infraestructura de datos</option>
+                    <option value="app-movil">Desarrollo de App Móvil</option>
+                    <option value="app-escritorio">Desarrollo de App de Escritorio</option>
+                    <option value="app-web">Desarrollo de App Web</option>
+                    <option value="ds-medida">Desarrollo a la medida</option>
+                    <option value="cctv" disabled>Sistema CCTV</option>
+                    <option value="acceso" disabled>Control de Acceso</option>
+                    <option value="gps" disabled>GPS Vehicular</option>
+                    <option value="asistencia" disabled>Control de Asistencia</option>
+                    <option value="enlaces" disabled>Enlace PTP y PtMP</option>                        
+                </select>
+            </div>
+            <!-- Form para asunto -->
+            <div class="label-asunto">
+                <label for="input-asunto" class="asunto">Asunto (Requerido)</label>
+                <input type="text" name="asunto" id="id-asunto">
+            </div>
+            <!-- Form para mensaje -->
+            <div class="label-mensaje">
+                <label for="input-mensaje" class="message">Tu mensaje (opcional)</label>
+                <textarea name="your-message" id="id-message" cols="30" rows="10"></textarea>
+            </div>
+
+            <div class="button-play">
+                <button><p>¡Enviar Mi Contrato!</p></button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Estructura de la imagen con transform translate en eje y -->
+    <div class="img">
+        <div class="img-3d">
+            <img src="../img/character-3d.png" alt="">
+        </div>
+        </div>
+    </div>
+
+
+</body>

@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Exo', sans-serif;
+}
+
+/* Configuración de la barra de navegación */
+header{
+    display: flex;
+    height: 70px;
+    background-color: #ffffff;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo-img{
+    height: 60px;
+    margin-top: 10px;
+    margin-left: 100px;
+}
+
+h2{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 19px;
+    letter-spacing: 2px;
+    font-style: normal;
+}
+
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+nav .nav-link{
+    font-size: 15px;
+    font-family: sans-serif;
+    margin-right: 40px;
+    padding: 15px 30px;
+    letter-spacing: 1px;
+}
+
+
+.nav-link:hover{
+    background-color: #4089dd;
+    color: #ffffff;
+    border-radius: 5px;
+    transition: all 0.7s ease-in-out;
+}
+
+
+/* Empezamos a adaptar el responsive design cuando a partir de los 900 pixeles */
+@media(max-width: 900px){
+    header{
+        flex-direction: column;
+        height: 120px;
+        justify-content: space-evenly;
+    }
+
+    .logo{
+        margin-top: 0px
+    }
+
+    nav .nav-link{
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    }
+
+    nav a{
+        margin-right: 0;
+    }
+
+    .logo img{
+        margin-left: 0;
+    }
+
+    .nav-link:hover{
+        background: none;
+        transition: none;
+        border: none;
+        color: #000000;
+        text-decoration: underline;
+    }
+}
+
+.context {
+    display: flex;
+    width: 100%;
+    height: 90vh;
+    margin-bottom: 200px;
+    align-items: center;
+    position: absolute;
+}
+
+.context .img{
+    display: flex;
+    align-items: center;
+    width: 40%;
+}
+
+.img-3d img{
+    width: 500px;
+    animation: img-3d-img 7s linear infinite;
+    filter: drop-shadow(55px 35px 120px #fff);
+}
+
+@keyframes img-3d-img{
+    0%, 100%{
+        transform: translateY(-30px);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+}
+
+
+.general-form{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.general-form .contacto{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.contacto .titulo-contacto{
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+    margin-left: 150px;
+}
+
+.titulo-contacto h3{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+
+.contacto .informacion{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.informacion ul li{
+    line-height: 30px;
+}
+
+
+.form-general{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 6px;
+    background-color: #089c89;
+}
+
+/* Estilos para label name */
+.label-name{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.label-name .name{
+    color: #fff;
+}
+
+.label-name input{
+    max-width: 300px;
+    height: 30px;
+    margin-top: 10px;
+    padding-left: 7px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    outline: none;
+}
+
+.label-name input:hover{
+    outline: #fff auto;
+    outline-color: #26bdf8;
+}
+
+/* Estilos para label tel */
+.label-tel{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.label-tel .tel{
+    color: #fff;
+}
+
+.label-tel input{
+    max-width: 300px;
+    height: 30px;
+    margin-top: 10px;
+    padding-left: 7px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    outline: none;
+}
+
+.label-tel input:hover{
+    outline: #fff auto;
+    outline-color: #26bdf8;
+}
+
+/* Estilos para label email */
+.label-email{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.label-email .mail{
+    color: #fff;
+}
+
+.label-email input{
+    max-width: 300px;
+    height: 30px;
+    margin-top: 10px;
+    padding-left: 7px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    outline: none;
+}
+
+.label-email input:hover{
+    outline: #fff auto;
+    outline-color: #26bdf8;
+}
+
+
+/* Estilos para label servicios */
+.label-servicios{
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    margin-left: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.label-servicios .services{
+    color: #fff;
+}
+
+.label-servicios select{
+    display: flex;
+    max-width: 390px;
+    height: 30px;
+    margin-top: 10px;
+    padding-left: 7px;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 500px;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+    outline: none;
+}
+
+.option{
+    display: flex;
+    line-height: 5em;
+}
+
+.label-servicios select option{
+    color: #000000;
+}
+
+
+/* Estilos para label email */
+.label-asunto{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.label-asunto .asunto{
+    color: #fff;
+}
+
+.label-asunto input{
+    max-width: 300px;
+    height: 30px;
+    margin-top: 10px;
+    padding-left: 7px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+}
+
+.label-asunto input:hover{
+    outline: #fff auto;
+    outline-color: #26bdf8;
+}
+
+
+
+/* Estilos para label email */
+.label-mensaje{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.label-mensaje .message{
+    color: #fff;
+}
+
+.label-mensaje textarea{
+    box-sizing: border-box;
+    max-width: 400px;
+    height: 200px;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-left: 7px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+}
+
+.label-mensaje textarea:hover{
+    outline: #fff auto;
+    outline-color: #26bdf8;
+}
+
+
+
+.button-play{
+    display: flex;
+    justify-content: initial;
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.button-play button{
+    padding: 10px 20px;
+    background-color: #3cbcf8;
+    border: transparent;
+    border-radius: 10px;
+}
+
+.button-play button:hover{
+    transition: all .5s ease-in-out;
+    background-color: #000000;
+    border: transparent;
+    border-radius: 10px;
+}
+
+
+.button-play button p{
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: Tahoma;
+    color: #ffffff;
+}
+
